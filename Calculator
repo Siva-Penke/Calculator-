@@ -1,0 +1,29 @@
+import java.util.*;
+public class cal {
+    public static void main(String[] args) {
+        System.out.print("Enter values: ");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int add = a + b;
+        int sub = a - b;
+        int multi = a * b;
+        int div = a / b;
+        int rem = a % b;
+        System.out.println("Enter operator:");
+        String k = sc.next();
+        if (k.equals("+")) {
+            System.out.println("Addition value is: " + add);
+        } else if (k.equals("-")) {
+            System.out.println("Subtraction value is: " + sub);
+        } else if (k.equals("*")) {
+            System.out.println("Multiplication value is: " + multi);
+        } else if (k.equals("/")) {
+            System.out.println("Division value is: " + div);
+        } else if (k.equals("%")) {
+            System.out.println("Remainder is: " + rem);
+        } else {
+            System.out.println("Enter a valid operator!!");
+        }
+    }
+}
